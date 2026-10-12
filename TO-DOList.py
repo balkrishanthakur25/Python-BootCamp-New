@@ -1,29 +1,27 @@
+
 tasks = []
+
 while True:
-    print("1. Add task")
-    print("2. Delete task")
-    print("3. Remove last task")
-    print("4. Sort tasks")
-    print("5. Print tasks")
+    print("\n1. Add Task")
+    print("2. Delete Task")
+    print("3. Remove Last Task")
+    print("4. Sort Tasks")
+    print("5. Show Tasks")
     print("6. Exit")
 
-    choice = input("Choose an option: ")
+    choice = input("Choose option: ")
 
     if choice == "1":
-        while True:
-            task = input("Enter a task (-1 to go back): ")
-            
-            if task == "-1":
-                break
+        task = input("Enter task (-1 to stop): ")
 
+        if task != "-1":
             tasks.append(task)
 
     elif choice == "2":
         index = int(input("Enter index: "))
 
         if 0 <= index < len(tasks):
-            del tasks[index]
-            print(tasks)
+            tasks.pop(index)
         else:
             print("Invalid index")
 
@@ -32,8 +30,6 @@ while True:
             tasks.pop()
         else:
             print("List is empty")
-
-        print(tasks)
 
     elif choice == "4":
         tasks.sort()
