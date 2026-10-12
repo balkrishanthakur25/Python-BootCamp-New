@@ -1,23 +1,31 @@
-# print Error
-
-# 1
+# 1. NameError
+# Code:
 # print(hello)
+# Error: NameError: name 'hello' is not defined
+# Reason: hello ko quotes mein nahi likha, isliye Python use variable samajhta hai.
 
-# NameError: name 'hello' is not defined
+# ==============================================
 
-# 2
+# 2. SyntaxError - Missing closing bracket
+# Code:
 # print("hello"
+# Error: SyntaxError
+# Reason: print() ka closing bracket ) missing hai.
 
-# SyntaxError
+# ==============================================
 
-# 3
+# 3. SyntaxError - Missing closing quotation mark
+# Code:
 # print("hello)
+# Error: SyntaxError
+# Reason: Starting double quote hai, lekin ending double quote missing hai.
 
-# SyntaxError - Reason: Starting " hai, lekin ending " missing hai.
+# ==============================================
 
-# =================================================
+# My Introduction
 
-print("My name is Aman")
-print("I am from JDP")
-print("My favorite food is Maggi")
-print("One of my hobbies is coding")
+print("My name is Balkrishan.")
+print("I live in Seoni.")
+print("My favourite food is pizza.")
+print("My hobby is learning coding.")
+print("I hope to learn Python programming.")
