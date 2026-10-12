@@ -2,7 +2,7 @@
 tasks = []
 
 while True:
-    print("\n1. Add Task")
+    print("1. Add Task")
     print("2. Delete Task")
     print("3. Remove Last Task")
     print("4. Sort Tasks")
