@@ -1,6 +1,4 @@
-
 tasks = []
-
 while True:
     print("1. Add task")
     print("2. Delete task")
